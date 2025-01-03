@@ -1,0 +1,62 @@
+/* Reset some default styling */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.exp-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.container {
+    position: relative;
+    padding-left: 20px;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -6px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #3498db;
+    border: 3px solid #fff;
+    top: 0;
+}
+
+.timeline-content {
+    padding-left: 20px;
+    border-left: 2px solid #3498db;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-content h3 {
+    font-size: 1.2em;
+    color: #3498db;
+}
+
+.timeline-content p {
+    margin: 10px 0;
+}
+
+.date {
+    display: block;
+    font-size: 0.9em;
+    color: #777;
+}
